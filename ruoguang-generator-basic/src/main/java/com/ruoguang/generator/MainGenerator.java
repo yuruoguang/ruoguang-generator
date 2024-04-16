@@ -20,7 +20,7 @@ public class MainGenerator {
         // 输出路径
         String outputPath = projectPath;
         // 生成静态文件
-        StaticGenerator.copyFilesByRecursive(inputPath, outputPath);
+        StaticGenerator.copyFilesByHutool(inputPath, outputPath);
         // 生成动态文件
         String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl";
         String outputDynamicFilePath = outputPath + File.separator + "acm-template/src/com/yupi/MainTemplate.java";
